@@ -29,7 +29,7 @@ from tobrot.helper_funcs.youtube_dl_extractor import extract_youtube_dl_formats
 
 async def incoming_message_f(client, message):
     """/leech command"""
-    i_m_sefg = await message.reply_text("processing", quote=True)
+    i_m_sefg = await message.reply_text("processing✪︎✪︎✪︎✪︎", quote=True)
     is_zip = False
     if len(message.command) > 1:
         if message.command[1] == "archive":
@@ -39,7 +39,7 @@ async def incoming_message_f(client, message):
     LOGGER.info(dl_url)
     LOGGER.info(cf_name)
     if dl_url is not None:
-        await i_m_sefg.edit_text("extracting links")
+        await i_m_sefg.edit_text("extracting links✪︎......")
         # start the aria2c daemon
         aria_i_p = await aria_start()
         LOGGER.info(aria_i_p)
