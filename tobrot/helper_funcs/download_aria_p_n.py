@@ -217,13 +217,13 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
         if not complete:
             if not file.error_message:
                 msg = ""
-                # sometimes, this weird https://t.me/c/1220993104/392975
+                # sometimes, this weird 
                 # error creeps up
                 # TODO: temporary workaround
                 downloading_dir_name = "N/A"
                 try:
                     # another derp -_-
-                    # https://t.me/c/1220993104/423318
+                    # 
                     downloading_dir_name = str(file.name)
                 except:
                     pass
